@@ -1,0 +1,4 @@
+cursos = ['Ingês','Portugês','Historia','Python','Alemão']
+notas = [7.5, 4, 8, 2, 10]
+cursos_e_notas = cursos + notas
+print(cursos_e_notas)
