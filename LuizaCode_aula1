@@ -1,0 +1,11 @@
+# Pergunte o nome do usuário
+print("Olá, qual é o seu nome?")
+# Pego o nome do usuario 
+user_nome = input()
+# Retorno nome do usário com a mensagem e pergunto a idade
+print(f"{user_nome}, é um prazer conhecê-la! Qual é a sua idade?")
+# Pego a idade do usuário 
+user_idade = input()
+#Calculando a diferença de idade entre o robô e o usuário
+dif_idades = 107 - int(user_idade)
+print(f"{user_nome}, eu sou a Robozinho e sou {dif_idades} anos mais velha que você!")
