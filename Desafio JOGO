@@ -1,0 +1,25 @@
+from random import randint
+
+print('Digite o seu nome? ')
+user_nome = input()
+print("Olá " + user_nome + ", irei te explicar agora as regras do jogo!")
+print("1ª Regra: Você tera que escolher um número entre 1 e 20")
+print("2ª Regra: Você tera 6 tentativas para acertar o número que eu pensei")
+
+valor = (randint(1,20))
+tentativa = 6
+#print(randint(1,20))
+
+while tentativa > 1:
+  tentativa = tentativa - 1
+
+  numero = int(input('Em que número eu pensei? '))
+  if valor > numero:
+    print('O número que pensei é maior!')
+    print('Número de tentativas: %d' % tentativa)
+  elif valor < numero:
+    print('O número que pensei é menor!')
+    print('Número de tentativas: %d' % tentativa)
+  else:
+    print('Parabéns você ACERTOU!')
+    break
